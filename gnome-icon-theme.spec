@@ -6,6 +6,7 @@ License: GPL
 Group: Graphical desktop/GNOME
 URL: http://www.gnome.org/
 Source0: ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/%{name}-%{version}.tar.bz2
+BuildRoot: %{_tmppath}/%{name}-%{version}-buildroot
 BuildRequires: perl-XML-Parser
 BuildRequires: hicolor-icon-theme
 BuildRequires: icon-naming-utils >= 0.8.1
