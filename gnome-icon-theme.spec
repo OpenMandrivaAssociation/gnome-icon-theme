@@ -1,13 +1,13 @@
 Summary: GNOME default icons
 Name: gnome-icon-theme
-Version: 2.22.0
+Version: 2.23.2
 Release: %mkrel 1
-License: GPL
+License: GPLv2+
 Group: Graphical desktop/GNOME
 URL: http://www.gnome.org/
 Source0: ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/%{name}-%{version}.tar.bz2
 BuildRoot: %{_tmppath}/%{name}-%{version}-buildroot
-BuildRequires: perl-XML-Parser
+BuildRequires: intltool
 BuildRequires: hicolor-icon-theme
 BuildRequires: icon-naming-utils >= 0.8.1
 BuildArch: noarch
