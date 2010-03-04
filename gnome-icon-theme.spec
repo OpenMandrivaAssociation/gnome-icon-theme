@@ -1,6 +1,6 @@
 Summary: GNOME default icons
 Name: gnome-icon-theme
-Version: 2.29.0
+Version: 2.29.1
 Release: %mkrel 1
 License: GPLv2+
 Group: Graphical desktop/GNOME
@@ -64,5 +64,6 @@ rm -rf $RPM_BUILD_ROOT
 %doc README TODO
 %dir %{_datadir}/icons/gnome
 %{_datadir}/icons/gnome/*x*
+%_datadir/pkgconfig/%name.pc
 %ghost %{_datadir}/icons/gnome/icon-theme.cache
 %{_var}/lib/rpm/filetriggers/gtk-icon-cache-gnome.*
