@@ -1,6 +1,6 @@
 Summary: GNOME default icons
 Name: gnome-icon-theme
-Version: 2.29.2
+Version: 2.29.3
 Release: %mkrel 1
 License: GPLv2+
 Group: Graphical desktop/GNOME
