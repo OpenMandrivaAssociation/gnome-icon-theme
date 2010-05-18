@@ -1,11 +1,13 @@
 Summary: GNOME default icons
 Name: gnome-icon-theme
 Version: 2.30.2.1
-Release: %mkrel 1
+Release: %mkrel 2
 License: GPLv2+
 Group: Graphical desktop/GNOME
 URL: http://www.gnome.org/
 Source0: ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/%{name}-%{version}.tar.bz2
+# (fc) 2.30.2.1-2mdv add missing volume icons (Mdv bug #59329) (GIT)
+Source1: missing-audio.tar
 BuildRoot: %{_tmppath}/%{name}-%{version}-buildroot
 BuildRequires: intltool
 BuildRequires: hicolor-icon-theme
@@ -21,7 +23,7 @@ Conflicts: nautilus-filesharing < 0.2-3mdv
 GNOME default icons
 
 %prep
-%setup -q
+%setup -q -a1
 
 %build
 
