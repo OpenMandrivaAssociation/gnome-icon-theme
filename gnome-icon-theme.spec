@@ -30,7 +30,7 @@ GNOME default icons
 %make
 
 %install
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %makeinstall_std
 touch %buildroot%{_datadir}/icons/gnome/icon-theme.cache
@@ -50,7 +50,7 @@ EOF
 chmod 755 %buildroot%{_var}/lib/rpm/filetriggers/gtk-icon-cache-gnome.script
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %post
 %update_icon_cache gnome
