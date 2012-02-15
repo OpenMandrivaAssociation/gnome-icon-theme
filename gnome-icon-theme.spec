@@ -23,7 +23,7 @@ Summary:	The pkgconfig for %{name}
 Group:		Development/GNOME and GTK+
 Requires:	%{name} = %{version}
 
-%description
+%description devel
 The pkgconfig for %{name}.
 
 %prep
