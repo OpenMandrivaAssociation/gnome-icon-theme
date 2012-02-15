@@ -8,9 +8,10 @@ URL: http://www.gnome.org/
 Source0: ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/%{name}-%{version}.tar.xz
 BuildArch: noarch
 
-BuildRequires: intltool
+BuildRequires: gtk+2.0
 BuildRequires: hicolor-icon-theme
 BuildRequires: icon-naming-utils >= 0.8.7
+BuildRequires: intltool
 
 Requires: hicolor-icon-theme
 Requires(post,postun):	gtk+2.0
