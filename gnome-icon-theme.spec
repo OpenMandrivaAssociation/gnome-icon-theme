@@ -2,8 +2,8 @@
 
 Summary:	GNOME default icons
 Name:		gnome-icon-theme
-Version:	3.6.2
-Release:	2
+Version:	3.8.3
+Release:	3
 License:	GPLv2+
 Group:		Graphical desktop/GNOME
 Url:		http://www.gnome.org/
@@ -21,11 +21,19 @@ Requires(post,postun):	gtk+2.0
 %description
 GNOME default icons.
 
+%package	devel
+Summary:	Development files for gnome-icon-theme
+Group:		Development/C
+Requires:	%{name} = %{version}-%{release}
+
+%description devel
+Development files for gnome-icon-theme
+
 %prep
 %setup -q -a1
 
 %build
-./configure --prefix=%{_prefix} --enable-icon-mapping
+%configure2_5x --enable-icon-mapping
 %make
 
 %install
@@ -56,7 +64,8 @@ chmod 755 %{buildroot}%{_var}/lib/rpm/filetriggers/gtk-icon-cache-gnome.script
 %doc README TODO
 %dir %{_datadir}/icons/gnome
 %{_datadir}/icons/gnome/*x*
-%{_datadir}/pkgconfig/%{name}.pc
 %ghost %{_datadir}/icons/gnome/icon-theme.cache
 %{_var}/lib/rpm/filetriggers/gtk-icon-cache-gnome.*
 
+%files devel
+%{_datadir}/pkgconfig/%{name}.pc
