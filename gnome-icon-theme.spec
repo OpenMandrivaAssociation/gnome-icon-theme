@@ -2,13 +2,12 @@
 
 Summary:	GNOME default icons
 Name:		gnome-icon-theme
-Version:	3.8.3
-Release:	9
+Version:	3.12.0
+Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/GNOME
 Url:		http://www.gnome.org/
 Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/gnome-icon-theme/%{url_ver}/%{name}-%{version}.tar.xz
-Source1:	missing-audio.tar
 BuildArch:	noarch
 
 BuildRequires:	intltool
@@ -30,10 +29,10 @@ Requires:	%{name} = %{version}-%{release}
 Development files for gnome-icon-theme
 
 %prep
-%setup -q -a1
+%setup -q
 
 %build
-%configure2_5x --enable-icon-mapping
+%configure --enable-icon-mapping
 %make
 
 %install
