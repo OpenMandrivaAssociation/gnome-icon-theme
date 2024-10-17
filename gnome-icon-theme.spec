@@ -6,7 +6,7 @@ Version:	3.12.0
 Release:	5
 License:	GPLv2+
 Group:		Graphical desktop/GNOME
-Url:		http://www.gnome.org/
+Url:		https://www.gnome.org/
 Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/gnome-icon-theme/%{url_ver}/%{name}-%{version}.tar.xz
 BuildArch:	noarch
 
