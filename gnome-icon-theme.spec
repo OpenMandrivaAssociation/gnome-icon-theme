@@ -10,6 +10,11 @@ Url:		https://www.gnome.org/
 Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/gnome-icon-theme/%{url_ver}/%{name}-%{version}.tar.xz
 BuildArch:	noarch
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	intltool
 BuildRequires:	hicolor-icon-theme
 BuildRequires:	icon-naming-utils >= 0.8.7
